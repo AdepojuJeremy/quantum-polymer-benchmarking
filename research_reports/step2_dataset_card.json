@@ -1,0 +1,20 @@
+{
+  "dataset_name": "PolyMetriX Curated Glass Transition Temperature Dataset",
+  "dataset_version": "v1",
+  "dataset_url": "https://zenodo.org/records/15210035/files/LAMALAB_CURATED_Tg_structured_polymerclass.csv?download=1",
+  "local_raw_file": "/content/quantum_classical_kernel_ood_polymer_benchmark/data/raw/LAMALAB_CURATED_Tg_structured_polymerclass.csv",
+  "local_clean_file": "/content/quantum_classical_kernel_ood_polymer_benchmark/data/processed/polymetrix_curated_tg_clean.csv",
+  "sha256": "b3b7e08a77a5739b55b8b70bba9ae78c5173c8658174f4732d30b6ea5b0a1079",
+  "scientific_role": "Primary supervised benchmark",
+  "polymer_representation": "Canonical PSMILES",
+  "target": "Glass transition temperature",
+  "target_symbol": "Tg",
+  "target_unit": "K",
+  "original_rows": 7367,
+  "final_usable_rows": 7363,
+  "unique_polymers": 7363,
+  "removed_red_reliability": true,
+  "quantum_train_size": 700,
+  "quantum_test_size": 400,
+  "notes": "PolyMetriX precomputed features are not used in the main quantum-versus-classical comparison. Representations are recomputed consistently in Step 3."
+}

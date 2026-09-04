@@ -1,0 +1,11 @@
+{
+  "global_scaler_used_for_models": false,
+  "global_pca_used_for_models": false,
+  "global_umap_used_for_models": false,
+  "exploratory_embeddings_only": true,
+  "split_specific_imputation_required": true,
+  "split_specific_scaling_required": true,
+  "split_specific_pca_required": true,
+  "quantum_angle_scaling_fit_on_train_only": true,
+  "metadata_used_as_predictive_features": false
+}

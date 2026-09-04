@@ -1,0 +1,13 @@
+{
+  "benchmark_splits": 5,
+  "kernels_per_split": 7,
+  "kernel_diagnostic_rows_expected": 35,
+  "kernel_diagnostic_rows_observed": 35,
+  "pairwise_geometry_rows_expected": 140,
+  "pairwise_geometry_rows_observed": 140,
+  "test_novelty_rows_expected": 14000,
+  "test_novelty_rows_observed": 14000,
+  "finite_kernel_diagnostics": true,
+  "test_labels_used_for_model_selection": false,
+  "main_quantum_configuration_changed": false
+}

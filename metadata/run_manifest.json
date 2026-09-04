@@ -1,0 +1,80 @@
+{
+  "benchmark_regimes": [
+    "random_iid",
+    "structural_cluster_ood",
+    "high_tg_extrapolation",
+    "low_tg_extrapolation",
+    "class_holdout_polyimides"
+  ],
+  "configuration_file": "configs/experiment_configuration.json",
+  "dataset": {
+    "clean_dataset_filename": "polymetrix_curated_tg_clean.csv",
+    "data_release_policy": "The release package records provenance and checksums but does not redistribute the upstream raw dataset. Reproduction should download the dataset from the cited upstream source and follow its applicable terms.",
+    "dataset_name": "PolyMetriX Curated Tg",
+    "dataset_version": "v1",
+    "raw_dataset_filename": "LAMALAB_CURATED_Tg_structured_polymerclass.csv",
+    "raw_dataset_in_release_archive": false,
+    "recorded_raw_sha256": "b3b7e08a77a5739b55b8b70bba9ae78c5173c8658174f4732d30b6ea5b0a1079",
+    "target": "Tg",
+    "target_unit": "K",
+    "unique_polymer_strings": 7363,
+    "upstream_url": "https://zenodo.org/records/15210035/files/LAMALAB_CURATED_Tg_structured_polymerclass.csv?download=1",
+    "usable_samples": 7363,
+    "verified_raw_sha256": "b3b7e08a77a5739b55b8b70bba9ae78c5173c8658174f4732d30b6ea5b0a1079"
+  },
+  "environment_file": "metadata/environment.json",
+  "final_notebook_expected_location": "notebooks/quantum_polymer_ood_benchmark.ipynb",
+  "fixed_design": {
+    "dataset": "PolyMetriX Curated Tg",
+    "global_seed": 42,
+    "matched_test_size": 400,
+    "matched_train_size": 700,
+    "paper_title": "A Controlled Benchmark of Quantum and Classical Kernels Under Out-of-Distribution Polymer Generalization",
+    "primary_quantum_depth": 2,
+    "primary_quantum_qubits": 8,
+    "primary_quantum_shots": null,
+    "quantum_dimension_ablation": [
+      4,
+      8,
+      12
+    ],
+    "target": "Tg",
+    "target_unit": "K"
+  },
+  "heavy_kernel_model_artifacts_bundled": false,
+  "leakage_audit_passed": true,
+  "matched_split_manifest": "metadata/matched_split_manifest.json",
+  "new_hyperparameter_selection_in_step14": false,
+  "new_model_fitting_in_step14": false,
+  "number_of_benchmark_regimes": 5,
+  "paper_title": "A Controlled Benchmark of Quantum and Classical Kernels Under Out-of-Distribution Polymer Generalization",
+  "preprocessing_policy": {
+    "exploratory_embeddings_only": true,
+    "global_pca_used_for_models": false,
+    "global_scaler_used_for_models": false,
+    "global_umap_used_for_models": false,
+    "metadata_used_as_predictive_features": false,
+    "quantum_angle_scaling_fit_on_train_only": true,
+    "split_specific_imputation_required": true,
+    "split_specific_pca_required": true,
+    "split_specific_scaling_required": true
+  },
+  "raw_dataset_redistributed": false,
+  "release_generated_at_utc": "2026-09-04T11:27:54.599594+00:00",
+  "step13_integrity": {
+    "blanket_quantum_advantage_claim_made": false,
+    "confirmatory_rows": 20,
+    "main_figures_pdf": 6,
+    "main_figures_png": 6,
+    "main_figures_svg": 6,
+    "main_tables_csv": 5,
+    "matched_test_size_preserved": true,
+    "matched_train_size_preserved": true,
+    "new_model_selection_performed": false,
+    "supp_figures_pdf": 5,
+    "supp_figures_png": 5,
+    "supp_figures_svg": 5,
+    "supp_tables_csv": 8
+  },
+  "test_labels_used_for_selection_in_step14": false
+}

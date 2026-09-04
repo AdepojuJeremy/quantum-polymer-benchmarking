@@ -1,0 +1,42 @@
+{
+  "dataset": "PolyMetriX Curated Tg",
+  "target": "Tg (K)",
+  "analysis_role": "post-hoc mechanistic kernel diagnostics",
+  "kernels_analyzed": [
+    "FQK",
+    "PQK",
+    "Linear",
+    "RBF",
+    "Laplacian",
+    "Mat\u00e9rn",
+    "Tanimoto"
+  ],
+  "benchmark_regimes": [
+    "random_iid",
+    "structural_cluster_ood",
+    "high_tg_extrapolation",
+    "low_tg_extrapolation",
+    "class_holdout_polyimides"
+  ],
+  "centered_spectrum": true,
+  "centered_kernel_alignment": true,
+  "normalized_centered_geometry_distance": true,
+  "structural_similarity_reference": "Morgan Tanimoto",
+  "target_alignment_uses_training_targets_only": true,
+  "test_error_analysis_is_post_hoc": true,
+  "used_for_hyperparameter_selection": false,
+  "formal_statistical_inference_deferred_to_step12": true,
+  "integrity": {
+    "benchmark_splits": 5,
+    "kernels_per_split": 7,
+    "kernel_diagnostic_rows_expected": 35,
+    "kernel_diagnostic_rows_observed": 35,
+    "pairwise_geometry_rows_expected": 140,
+    "pairwise_geometry_rows_observed": 140,
+    "test_novelty_rows_expected": 14000,
+    "test_novelty_rows_observed": 14000,
+    "finite_kernel_diagnostics": true,
+    "test_labels_used_for_model_selection": false,
+    "main_quantum_configuration_changed": false
+  }
+}

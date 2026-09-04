@@ -1,0 +1,12 @@
+figure,role,stem,description
+Figure 1,main,figure1_study_design,End-to-end experimental design and evidence pipeline.
+Figure 2,main,figure2_main_predictive_performance,Matched 700/400 MAE with structural-cluster bootstrap intervals.
+Figure 3,main,figure3_confirmatory_quantum_classical_inference,Confirmatory paired quantum-minus-classical MAE effects.
+Figure 4,main,figure4_kernel_geometry,"Kernel effective rank, target alignment, and mean predictive error."
+Figure 5,main,figure5_uncertainty_calibration,Empirical conformal coverage and interval width under distribution shift.
+Figure 6,main,figure6_shot_noise_robustness,Finite-shot and depolarizing robustness of FQK/PQK prediction.
+Figure S1,supplementary,figureS1_kernel_novelty_error,Error growth with held-out kernel-space novelty.
+Figure S2,supplementary,figureS2_quantum_ablation_sensitivity,One-factor-at-a-time quantum circuit and PQK outer-kernel ablations.
+Figure S3,supplementary,figureS3_seed_and_structural_fold_robustness,Random-seed and structural-fold robustness reruns.
+Figure S4,supplementary,figureS4_average_model_ranks,Average MAE model ranks across evaluation regimes.
+Figure S5,supplementary,figureS5_confirmatory_evidence_map,Multiplicity-controlled evidence direction by regime and comparator.

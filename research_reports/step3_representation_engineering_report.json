@@ -1,0 +1,51 @@
+{
+  "dataset": "PolyMetriX Curated Tg",
+  "target": "Tg (K)",
+  "n_polymers": 7363,
+  "morgan_radius": 2,
+  "morgan_bits": 2048,
+  "active_morgan_bits": 2035,
+  "mean_fingerprint_density": 0.01945511977115306,
+  "descriptor_count": 27,
+  "descriptor_names": [
+    "MolWt",
+    "ExactMolWt",
+    "HeavyAtomMolWt",
+    "MolLogP",
+    "TPSA",
+    "LabuteASA",
+    "HeavyAtomCount",
+    "NumHeteroatoms",
+    "NumHAcceptors",
+    "NumHDonors",
+    "NumRotatableBonds",
+    "RingCount",
+    "NumAromaticRings",
+    "NumAliphaticRings",
+    "NumSaturatedRings",
+    "FractionCSP3",
+    "BertzCT",
+    "BalabanJ",
+    "Chi0",
+    "Chi1",
+    "Kappa1",
+    "Kappa2",
+    "Kappa3",
+    "NumValenceElectrons",
+    "AromaticAtomFraction",
+    "HeteroatomFraction",
+    "MeanHeavyAtomDegree"
+  ],
+  "dummy_atom_distribution": {
+    "2": 7363
+  },
+  "rdkit_graph_duplicates": 0,
+  "predictive_global_scaling": false,
+  "predictive_global_pca": false,
+  "quantum_dimension_grid": [
+    4,
+    8,
+    12
+  ],
+  "quantum_default_dimension": 8
+}

@@ -1,0 +1,194 @@
+{
+  "dataset": "PolyMetriX Curated Tg",
+  "target": "Tg (K)",
+  "main_test_size_per_regime": 400,
+  "primary_metric": "MAE",
+  "confidence_level": 0.95,
+  "confirmatory_quantum_models": [
+    "QKRR_FQK",
+    "QKRR_PQK"
+  ],
+  "confirmatory_classical_references": [
+    "KRR_RBF_MATCHED",
+    "KRR_TANIMOTO"
+  ],
+  "confirmatory_test_count": 20,
+  "primary_resampling_unit": "target-independent structural micro-cluster",
+  "bootstrap_replicates": 10000,
+  "permutation_replicates_requested": 20000,
+  "multiplicity_control": "Holm family-wise error control",
+  "exploratory_qsvr_multiplicity_control": "Benjamini-Hochberg false-discovery-rate control",
+  "random_iid_seeds": [
+    7,
+    19,
+    42,
+    73,
+    101
+  ],
+  "structural_robustness_folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "robustness_models": [
+    "QKRR_FQK",
+    "QKRR_PQK",
+    "KRR_RBF_MATCHED",
+    "KRR_TANIMOTO"
+  ],
+  "auxiliary_hyperparameters_frozen_from_training_cv": true,
+  "auxiliary_test_labels_used_for_tuning": false,
+  "seed42_end_to_end_reproduction_passed": true,
+  "structural_fold0_end_to_end_reproduction_passed": true,
+  "supported_quantum_lower_mae_comparisons": [],
+  "supported_classical_lower_mae_comparisons": [
+    {
+      "split": "random_iid",
+      "quantum_model": "QKRR_FQK",
+      "classical_model": "KRR_RBF_MATCHED",
+      "mae_difference_quantum_minus_classical": 24.187316358758363,
+      "cluster_bootstrap_ci_low": 16.281207735819727,
+      "cluster_bootstrap_ci_high": 32.20904545319147,
+      "holm_adjusted_p": 0.000999950002499875
+    },
+    {
+      "split": "random_iid",
+      "quantum_model": "QKRR_FQK",
+      "classical_model": "KRR_TANIMOTO",
+      "mae_difference_quantum_minus_classical": 28.993072181810795,
+      "cluster_bootstrap_ci_low": 22.162435709411024,
+      "cluster_bootstrap_ci_high": 36.00496983868805,
+      "holm_adjusted_p": 0.000999950002499875
+    },
+    {
+      "split": "random_iid",
+      "quantum_model": "QKRR_PQK",
+      "classical_model": "KRR_RBF_MATCHED",
+      "mae_difference_quantum_minus_classical": 23.994291010368926,
+      "cluster_bootstrap_ci_low": 15.783195769756512,
+      "cluster_bootstrap_ci_high": 32.142504174521406,
+      "holm_adjusted_p": 0.000999950002499875
+    },
+    {
+      "split": "random_iid",
+      "quantum_model": "QKRR_PQK",
+      "classical_model": "KRR_TANIMOTO",
+      "mae_difference_quantum_minus_classical": 28.800046833421355,
+      "cluster_bootstrap_ci_low": 21.60986141851187,
+      "cluster_bootstrap_ci_high": 35.66012013077018,
+      "holm_adjusted_p": 0.000999950002499875
+    },
+    {
+      "split": "high_tg_extrapolation",
+      "quantum_model": "QKRR_FQK",
+      "classical_model": "KRR_RBF_MATCHED",
+      "mae_difference_quantum_minus_classical": 69.20902818177217,
+      "cluster_bootstrap_ci_low": 55.50287707438638,
+      "cluster_bootstrap_ci_high": 78.71373125783086,
+      "holm_adjusted_p": 0.005249737513124344
+    },
+    {
+      "split": "high_tg_extrapolation",
+      "quantum_model": "QKRR_FQK",
+      "classical_model": "KRR_TANIMOTO",
+      "mae_difference_quantum_minus_classical": 66.88924349679473,
+      "cluster_bootstrap_ci_low": 54.81678624526717,
+      "cluster_bootstrap_ci_high": 73.57573695951548,
+      "holm_adjusted_p": 0.006999650017499125
+    },
+    {
+      "split": "high_tg_extrapolation",
+      "quantum_model": "QKRR_PQK",
+      "classical_model": "KRR_RBF_MATCHED",
+      "mae_difference_quantum_minus_classical": 70.17714382622678,
+      "cluster_bootstrap_ci_low": 53.67105958737705,
+      "cluster_bootstrap_ci_high": 81.77040173185456,
+      "holm_adjusted_p": 0.005249737513124344
+    },
+    {
+      "split": "high_tg_extrapolation",
+      "quantum_model": "QKRR_PQK",
+      "classical_model": "KRR_TANIMOTO",
+      "mae_difference_quantum_minus_classical": 67.85735914124936,
+      "cluster_bootstrap_ci_low": 52.78715979293757,
+      "cluster_bootstrap_ci_high": 77.51616927730952,
+      "holm_adjusted_p": 0.00439978001099945
+    },
+    {
+      "split": "low_tg_extrapolation",
+      "quantum_model": "QKRR_FQK",
+      "classical_model": "KRR_RBF_MATCHED",
+      "mae_difference_quantum_minus_classical": 69.04797419884142,
+      "cluster_bootstrap_ci_low": 55.646393961863815,
+      "cluster_bootstrap_ci_high": 78.90379585466366,
+      "holm_adjusted_p": 0.000999950002499875
+    },
+    {
+      "split": "low_tg_extrapolation",
+      "quantum_model": "QKRR_FQK",
+      "classical_model": "KRR_TANIMOTO",
+      "mae_difference_quantum_minus_classical": 72.27855975118007,
+      "cluster_bootstrap_ci_low": 54.64841621540148,
+      "cluster_bootstrap_ci_high": 85.66426231228384,
+      "holm_adjusted_p": 0.000999950002499875
+    },
+    {
+      "split": "low_tg_extrapolation",
+      "quantum_model": "QKRR_PQK",
+      "classical_model": "KRR_RBF_MATCHED",
+      "mae_difference_quantum_minus_classical": 66.04853531054616,
+      "cluster_bootstrap_ci_low": 52.158668372844886,
+      "cluster_bootstrap_ci_high": 74.91398463133146,
+      "holm_adjusted_p": 0.000999950002499875
+    },
+    {
+      "split": "low_tg_extrapolation",
+      "quantum_model": "QKRR_PQK",
+      "classical_model": "KRR_TANIMOTO",
+      "mae_difference_quantum_minus_classical": 69.27912086288481,
+      "cluster_bootstrap_ci_low": 51.171921391984036,
+      "cluster_bootstrap_ci_high": 81.08469948541132,
+      "holm_adjusted_p": 0.000999950002499875
+    },
+    {
+      "split": "class_holdout_polyimides",
+      "quantum_model": "QKRR_FQK",
+      "classical_model": "KRR_RBF_MATCHED",
+      "mae_difference_quantum_minus_classical": 60.48232276163935,
+      "cluster_bootstrap_ci_low": 44.292477962443975,
+      "cluster_bootstrap_ci_high": 75.14542183589947,
+      "holm_adjusted_p": 0.0013499325033748313
+    },
+    {
+      "split": "class_holdout_polyimides",
+      "quantum_model": "QKRR_FQK",
+      "classical_model": "KRR_TANIMOTO",
+      "mae_difference_quantum_minus_classical": 62.38125394874727,
+      "cluster_bootstrap_ci_low": 43.70820742608115,
+      "cluster_bootstrap_ci_high": 78.0996681106108,
+      "holm_adjusted_p": 0.000999950002499875
+    },
+    {
+      "split": "class_holdout_polyimides",
+      "quantum_model": "QKRR_PQK",
+      "classical_model": "KRR_RBF_MATCHED",
+      "mae_difference_quantum_minus_classical": 60.81855314610766,
+      "cluster_bootstrap_ci_low": 44.33182261709913,
+      "cluster_bootstrap_ci_high": 74.81031110099202,
+      "holm_adjusted_p": 0.000999950002499875
+    },
+    {
+      "split": "class_holdout_polyimides",
+      "quantum_model": "QKRR_PQK",
+      "classical_model": "KRR_TANIMOTO",
+      "mae_difference_quantum_minus_classical": 62.71748433321558,
+      "cluster_bootstrap_ci_low": 43.773989420467316,
+      "cluster_bootstrap_ci_high": 78.76351704205786,
+      "holm_adjusted_p": 0.000999950002499875
+    }
+  ],
+  "blanket_quantum_advantage_claim_made": false,
+  "non_significance_interpreted_as_equivalence": false
+}

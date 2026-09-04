@@ -1,0 +1,46 @@
+{
+  "dataset": "PolyMetriX Curated Tg",
+  "target": "Tg (K)",
+  "matched_train_size": 700,
+  "matched_test_size": 400,
+  "main_quantum_configuration": {
+    "n_qubits": 8,
+    "depth": 2,
+    "feature_map": "zz_interaction",
+    "entanglement": "linear",
+    "input_scale": 1.0,
+    "zz_scale": 1.0,
+    "mixing_scale": 0.5,
+    "projection": "local_xyz_all_zz",
+    "projected_outer_kernel": "rbf",
+    "complex_dtype": "complex64",
+    "simulation_batch_size": 256,
+    "shots": null,
+    "save_statevectors": true,
+    "overwrite_cache": false,
+    "random_state": 42
+  },
+  "quantum_engine": "exact batched Torch statevector",
+  "torch_device": "cpu",
+  "pennylane_reference_backend": "lightning.qubit",
+  "pennylane_equivalence_validation": {
+    "n_cases": 4,
+    "minimum_corresponding_state_fidelity": 0.9999993934346747,
+    "passed": true
+  },
+  "kernels": [
+    "FQK_MAIN",
+    "PQK_MAIN"
+  ],
+  "benchmark_regimes": [
+    "random_iid",
+    "structural_cluster_ood",
+    "high_tg_extrapolation",
+    "low_tg_extrapolation",
+    "class_holdout_polyimides"
+  ],
+  "kernel_construction_uses_test_labels": false,
+  "pqk_gamma_fit_on_training_features_only": true,
+  "finite_shot_noise_in_main_step": false,
+  "total_runtime_sec": 9.315873622894287
+}

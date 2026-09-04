@@ -1,0 +1,47 @@
+{
+  "class_holdout_polyimides": {
+    "split": "class_holdout_polyimides",
+    "test_index_file": "class_holdout_polyimides_test400.npy",
+    "test_index_sha256": "9348941189667cd154a59c0b3fd8d8a246965c62c72033e9f27ed16a65db0298",
+    "test_size": 400,
+    "train_index_file": "class_holdout_polyimides_train700.npy",
+    "train_index_sha256": "8ce2c9d618a259a8f6061cae4bc781de81a921197ba3dd701a5e85899d68f03d",
+    "train_size": 700
+  },
+  "high_tg_extrapolation": {
+    "split": "high_tg_extrapolation",
+    "test_index_file": "high_tg_extrapolation_test400.npy",
+    "test_index_sha256": "739c9a3bf7a660d80676302f18fc6be0cb772b8717ccbfc30bbb161b70dbc1c7",
+    "test_size": 400,
+    "train_index_file": "high_tg_extrapolation_train700.npy",
+    "train_index_sha256": "1cc9ba9f0b36761b72e863a7e39add12d2972b22a3e54eae8bef6e8927679c24",
+    "train_size": 700
+  },
+  "low_tg_extrapolation": {
+    "split": "low_tg_extrapolation",
+    "test_index_file": "low_tg_extrapolation_test400.npy",
+    "test_index_sha256": "deb7bab1e78a806a9ddb9fa588f5e7e3724f3f796e2e299638222b4fb77bd988",
+    "test_size": 400,
+    "train_index_file": "low_tg_extrapolation_train700.npy",
+    "train_index_sha256": "33a3b945f354c307d907b38b2b064e86588ea1f4c9131609ac875c2ed0749d07",
+    "train_size": 700
+  },
+  "random_iid": {
+    "split": "random_iid",
+    "test_index_file": "random_iid_test400.npy",
+    "test_index_sha256": "c995c4855c2158fb9a1447d2115d1175e320b7370f528722c72c83d94ba31b4a",
+    "test_size": 400,
+    "train_index_file": "random_iid_train700.npy",
+    "train_index_sha256": "4be718e8fb7629d87634f4bcf68cb7d4ce0d580374b4bf418f825b533f46087c",
+    "train_size": 700
+  },
+  "structural_cluster_ood": {
+    "split": "structural_cluster_ood",
+    "test_index_file": "structural_cluster_ood_test400.npy",
+    "test_index_sha256": "56dfd118228c20607aff7889d9cb6d41465ab81baf5aa698fb7843b3fb8146cc",
+    "test_size": 400,
+    "train_index_file": "structural_cluster_ood_train700.npy",
+    "train_index_sha256": "dc856662339a7435bcbd97388fb0fa04217193dde58be51e262f5fdec1b06fbe",
+    "train_size": 700
+  }
+}

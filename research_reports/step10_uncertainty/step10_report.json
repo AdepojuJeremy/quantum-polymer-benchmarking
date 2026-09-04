@@ -1,0 +1,60 @@
+{
+  "dataset": "PolyMetriX Curated Tg",
+  "target": "Tg (K)",
+  "analysis_role": "post-hoc uncertainty calibration and OOD coverage stress test",
+  "model_set": [
+    "FQK-QKRR",
+    "PQK-QKRR",
+    "Linear KRR",
+    "RBF KRR",
+    "Laplacian KRR",
+    "Mat\u00e9rn KRR",
+    "Tanimoto KRR"
+  ],
+  "conformal_design": {
+    "proper_train_fraction": 0.8,
+    "partition_is_label_blind": true,
+    "inner_cv_uses_proper_train_only": true,
+    "calibration_labels_used_only_for_conformal_scores": true,
+    "test_labels_used_only_for_final_evaluation": true,
+    "nominal_coverage_levels": [
+      0.8,
+      0.9,
+      0.95
+    ]
+  },
+  "uncertainty_proxy": "regularized kernel posterior-variance / leverage proxy",
+  "vanilla_split_conformal": true,
+  "adaptive_split_conformal": true,
+  "iid_finite_sample_interpretation": true,
+  "ood_coverage_is_empirical_stress_test": true,
+  "formal_model_comparison_inference_deferred_to_step12": true,
+  "runtime_sec": 461.2630686759949,
+  "integrity": {
+    "benchmark_splits": 5,
+    "kernel_models": 7,
+    "proper_train_per_split": 560,
+    "calibration_per_split": 140,
+    "test_per_split": 400,
+    "coverage_levels": [
+      0.8,
+      0.9,
+      0.95
+    ],
+    "interval_methods": [
+      "vanilla",
+      "adaptive_leverage"
+    ],
+    "interval_metric_rows_expected": 210,
+    "interval_metric_rows_observed": 210,
+    "interval_prediction_rows_expected": 84000,
+    "interval_prediction_rows_observed": 84000,
+    "finite_metrics": true,
+    "proper_calibration_test_disjoint": true,
+    "partition_uses_target": false,
+    "calibration_labels_used_for_hyperparameter_selection": false,
+    "test_labels_used_for_hyperparameter_selection": false,
+    "ood_exchangeability_guarantee_claimed": false,
+    "main_step7_results_replaced": false
+  }
+}

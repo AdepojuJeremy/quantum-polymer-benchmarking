@@ -1,0 +1,15 @@
+{
+  "main_figures_png": 6,
+  "main_figures_pdf": 6,
+  "main_figures_svg": 6,
+  "supp_figures_png": 5,
+  "supp_figures_pdf": 5,
+  "supp_figures_svg": 5,
+  "main_tables_csv": 5,
+  "supp_tables_csv": 8,
+  "confirmatory_rows": 20,
+  "matched_train_size_preserved": true,
+  "matched_test_size_preserved": true,
+  "blanket_quantum_advantage_claim_made": false,
+  "new_model_selection_performed": false
+}

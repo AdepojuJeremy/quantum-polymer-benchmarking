@@ -1,0 +1,24 @@
+{
+  "dataset": "PolyMetriX Curated Tg",
+  "target": "Tg (K)",
+  "primary_benchmark_regimes": [
+    "random_iid",
+    "structural_cluster_ood",
+    "high_tg_extrapolation",
+    "low_tg_extrapolation",
+    "class_holdout_polyimides"
+  ],
+  "matched_train_size": 700,
+  "matched_test_size": 400,
+  "internal_cv_folds": 5,
+  "random_iid_control": true,
+  "structural_cluster_ood": true,
+  "structural_cluster_target_independent": true,
+  "high_tg_extrapolation": true,
+  "low_tg_extrapolation": true,
+  "polymer_class_holdout": true,
+  "number_of_structural_robustness_folds": 5,
+  "canonical_graph_leakage_prevention": true,
+  "high_tg_threshold_k": 524.1500244140625,
+  "low_tg_threshold_k": 316.1499938964844
+}

@@ -1,0 +1,14 @@
+{
+  "project_title": "Quantum Kernels Under Distribution Shift: A Controlled Benchmark for Polymer Glass-Transition Prediction",
+  "base_dir": "/content/quantum_classical_kernel_ood_polymer_benchmark",
+  "device": "cpu",
+  "pennylane_device": "lightning.qubit",
+  "torch_available": true,
+  "cuda_available": false,
+  "cuda_device_name": null,
+  "pennylane_version": "0.45.1",
+  "seed": 42,
+  "figures_dir": "/content/quantum_classical_kernel_ood_polymer_benchmark/outputs/figures",
+  "tables_dir": "/content/quantum_classical_kernel_ood_polymer_benchmark/outputs/tables",
+  "kernel_dir": "/content/quantum_classical_kernel_ood_polymer_benchmark/outputs/kernel_matrices"
+}

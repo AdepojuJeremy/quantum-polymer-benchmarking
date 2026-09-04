@@ -1,0 +1,142 @@
+{
+  "dataset": "PolyMetriX Curated Tg",
+  "target": "Tg (K)",
+  "matched_train_size": 700,
+  "matched_test_size": 400,
+  "main_configuration_remains_prespecified": true,
+  "main_configuration": {
+    "n_qubits": 8,
+    "depth": 2,
+    "feature_map": "zz_interaction",
+    "entanglement": "linear",
+    "input_scale": 1.0,
+    "zz_scale": 1.0,
+    "mixing_scale": 0.5,
+    "projection": "local_xyz_all_zz",
+    "projected_outer_kernel": "rbf",
+    "shots": null
+  },
+  "ablation_protocol": "one_factor_at_a_time",
+  "ablation_families": [
+    "depth",
+    "dimension",
+    "feature_components",
+    "input_scale",
+    "pqk_outer_kernel",
+    "topology"
+  ],
+  "unique_quantum_configurations": 11,
+  "quantum_kernel_construction_runtime_sec": 166.1050202846527,
+  "ablation_regression_runtime_sec": 107.70245885848999,
+  "kernel_integrity_passed": true,
+  "step7_baseline_reproduction_passed": true,
+  "test_labels_used_for_hyperparameter_selection": false,
+  "statistical_significance_claimed_here": false,
+  "descriptive_best_levels": [
+    {
+      "ablation_family": "depth",
+      "kernel_family": "FQK",
+      "descriptive_best_level": "1",
+      "mean_mae": 87.10850423989989,
+      "mean_delta_mae_vs_main": -23.920664156864735,
+      "changes_main_configuration": false
+    },
+    {
+      "ablation_family": "depth",
+      "kernel_family": "PQK",
+      "descriptive_best_level": "1",
+      "mean_mae": 88.66811417182305,
+      "mean_delta_mae_vs_main": -24.088950227898312,
+      "changes_main_configuration": false
+    },
+    {
+      "ablation_family": "dimension",
+      "kernel_family": "FQK",
+      "descriptive_best_level": "4",
+      "mean_mae": 103.85526531090686,
+      "mean_delta_mae_vs_main": -7.17390308585775,
+      "changes_main_configuration": false
+    },
+    {
+      "ablation_family": "dimension",
+      "kernel_family": "PQK",
+      "descriptive_best_level": "4",
+      "mean_mae": 110.69180279002869,
+      "mean_delta_mae_vs_main": -2.0652616096926635,
+      "changes_main_configuration": false
+    },
+    {
+      "ablation_family": "feature_components",
+      "kernel_family": "FQK",
+      "descriptive_best_level": "no_zz",
+      "mean_mae": 102.62758584896656,
+      "mean_delta_mae_vs_main": -8.401582547798073,
+      "changes_main_configuration": false
+    },
+    {
+      "ablation_family": "feature_components",
+      "kernel_family": "PQK",
+      "descriptive_best_level": "no_zz",
+      "mean_mae": 94.28796980733965,
+      "mean_delta_mae_vs_main": -18.469094592381698,
+      "changes_main_configuration": false
+    },
+    {
+      "ablation_family": "input_scale",
+      "kernel_family": "FQK",
+      "descriptive_best_level": "0.5",
+      "mean_mae": 78.86147627044667,
+      "mean_delta_mae_vs_main": -32.16769212631796,
+      "changes_main_configuration": false
+    },
+    {
+      "ablation_family": "input_scale",
+      "kernel_family": "PQK",
+      "descriptive_best_level": "0.5",
+      "mean_mae": 70.6055139711486,
+      "mean_delta_mae_vs_main": -42.15155042857277,
+      "changes_main_configuration": false
+    },
+    {
+      "ablation_family": "pqk_outer_kernel",
+      "kernel_family": "PQK",
+      "descriptive_best_level": "matern32",
+      "mean_mae": 112.03902759524397,
+      "mean_delta_mae_vs_main": -0.7180368044773872,
+      "changes_main_configuration": false
+    },
+    {
+      "ablation_family": "topology",
+      "kernel_family": "FQK",
+      "descriptive_best_level": "linear",
+      "mean_mae": 111.02916839676462,
+      "mean_delta_mae_vs_main": 0.0,
+      "changes_main_configuration": false
+    },
+    {
+      "ablation_family": "topology",
+      "kernel_family": "PQK",
+      "descriptive_best_level": "full",
+      "mean_mae": 104.97652725027258,
+      "mean_delta_mae_vs_main": -7.780537149448773,
+      "changes_main_configuration": false
+    }
+  ],
+  "integrity": {
+    "unique_quantum_configurations": 11,
+    "unique_kernel_result_rows_expected": 110,
+    "unique_kernel_result_rows_observed": 110,
+    "outer_kernel_result_rows_expected": 20,
+    "outer_kernel_result_rows_observed": 20,
+    "expanded_ablation_result_rows_expected": 170,
+    "expanded_ablation_result_rows_observed": 170,
+    "unique_prediction_rows_expected": 44000,
+    "unique_prediction_rows_observed": 44000,
+    "expanded_prediction_rows_expected": 68000,
+    "expanded_prediction_rows_observed": 68000,
+    "kernel_integrity_passed": true,
+    "step7_baseline_reproduction_passed": true,
+    "all_result_metrics_finite": true,
+    "test_labels_used_for_tuning": false
+  }
+}

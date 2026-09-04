@@ -1,0 +1,27 @@
+{
+  "dataset": "PolyMetriX Curated Tg",
+  "target": "Tg (K)",
+  "publication_stage": "final figures and tables",
+  "main_figure_count": 6,
+  "supplementary_figure_count": 5,
+  "main_table_count": 5,
+  "supplementary_table_count": 8,
+  "figure_formats": [
+    "png",
+    "pdf",
+    "svg"
+  ],
+  "table_formats": [
+    "csv",
+    "latex"
+  ],
+  "headline_train_size": 700,
+  "headline_test_size": 400,
+  "confirmatory_inference_source": "Step 12",
+  "multiplicity_control": "Holm family-wise error control",
+  "new_model_fitting": false,
+  "new_hyperparameter_selection": false,
+  "test_set_reuse_for_selection": false,
+  "blanket_quantum_advantage_claim_made": false,
+  "publication_output_directory": "/content/quantum_classical_kernel_ood_polymer_benchmark/outputs/step13_publication_package"
+}

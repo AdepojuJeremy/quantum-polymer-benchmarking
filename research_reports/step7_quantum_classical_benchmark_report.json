@@ -1,0 +1,129 @@
+{
+  "dataset": "PolyMetriX Curated Tg",
+  "target": "Tg (K)",
+  "matched_train_size": 700,
+  "matched_test_size": 400,
+  "internal_cv_folds": 5,
+  "quantum_configuration": {
+    "n_qubits": 8,
+    "depth": 2,
+    "feature_map": "zz_interaction",
+    "entanglement": "linear",
+    "input_scale": 1.0,
+    "zz_scale": 1.0,
+    "mixing_scale": 0.5,
+    "projection": "local_xyz_all_zz",
+    "projected_outer_kernel": "rbf",
+    "complex_dtype": "complex64",
+    "simulation_batch_size": 256,
+    "shots": null,
+    "save_statevectors": true,
+    "overwrite_cache": false,
+    "random_state": 42
+  },
+  "regression_configuration": {
+    "cv_folds": 5,
+    "alpha_grid": [
+      0.001,
+      0.01,
+      0.1,
+      1.0,
+      10.0
+    ],
+    "svr_c_grid": [
+      0.3,
+      1.0,
+      3.0,
+      10.0
+    ],
+    "svr_epsilon_grid": [
+      0.05,
+      0.1,
+      0.2
+    ],
+    "cv_metric": "mae",
+    "top_k_fraction": 0.1,
+    "random_state": 42,
+    "save_models": true,
+    "save_predictions": true
+  },
+  "quantum_models": [
+    "QKRR_FQK",
+    "QSVR_FQK",
+    "QKRR_PQK",
+    "QSVR_PQK"
+  ],
+  "benchmark_regimes": [
+    "random_iid",
+    "structural_cluster_ood",
+    "high_tg_extrapolation",
+    "low_tg_extrapolation",
+    "class_holdout_polyimides"
+  ],
+  "test_labels_used_for_hyperparameter_selection": false,
+  "quantum_kernel_construction_uses_test_labels": false,
+  "main_classical_kernel_references": [
+    "KRR_LINEAR_MATCHED",
+    "KRR_RBF_MATCHED",
+    "KRR_LAPLACIAN_MATCHED",
+    "KRR_MATERN_MATCHED",
+    "KRR_TANIMOTO",
+    "SVR_RBF_MATCHED",
+    "SVR_TANIMOTO"
+  ],
+  "best_quantum_by_split": [
+    {
+      "split": "class_holdout_polyimides",
+      "model": "QSVR_FQK",
+      "model_display": "QSVR-FQK",
+      "mae": 98.59824289317832,
+      "rmse": 115.93686293229196,
+      "r2": -1.2807517108312192,
+      "spearman": 0.3428231347879063,
+      "top10_enrichment": 1.7499999999999998
+    },
+    {
+      "split": "high_tg_extrapolation",
+      "model": "QKRR_FQK",
+      "model_display": "QKRR-FQK",
+      "mae": 166.78756276630952,
+      "rmse": 178.80847284225175,
+      "r2": -15.70724357065734,
+      "spearman": -0.17791480806326895,
+      "top10_enrichment": 0.0
+    },
+    {
+      "split": "low_tg_extrapolation",
+      "model": "QSVR_PQK",
+      "model_display": "QSVR-PQK",
+      "mae": 152.91482865322462,
+      "rmse": 166.9231070237904,
+      "r2": -17.452649142643224,
+      "spearman": -0.2055698949708216,
+      "top10_enrichment": 0.5
+    },
+    {
+      "split": "random_iid",
+      "model": "QSVR_PQK",
+      "model_display": "QSVR-PQK",
+      "mae": 68.1788237297423,
+      "rmse": 91.01633547968268,
+      "r2": 0.3879447278842699,
+      "spearman": 0.6381370665044467,
+      "top10_enrichment": 3.25
+    },
+    {
+      "split": "structural_cluster_ood",
+      "model": "QSVR_FQK",
+      "model_display": "QSVR-FQK",
+      "mae": 60.32265606270578,
+      "rmse": 79.55444212266038,
+      "r2": 0.29943451406058597,
+      "spearman": 0.5539038562115043,
+      "top10_enrichment": 2.5
+    }
+  ],
+  "formal_significance_claim_made_in_step7": false,
+  "formal_significance_deferred_to_step12": true,
+  "total_quantum_regression_runtime_sec": 35.911909103393555
+}

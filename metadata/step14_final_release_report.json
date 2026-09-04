@@ -1,0 +1,67 @@
+{
+  "benchmark_regimes": [
+    "random_iid",
+    "structural_cluster_ood",
+    "high_tg_extrapolation",
+    "low_tg_extrapolation",
+    "class_holdout_polyimides"
+  ],
+  "dataset": "PolyMetriX Curated Tg",
+  "global_seed": 42,
+  "heavy_artifacts_bundled": false,
+  "integrity_status": "passed",
+  "matched_test_size": 400,
+  "matched_train_size": 700,
+  "new_model_selection": false,
+  "new_scientific_results_generated": false,
+  "paper_title": "A Controlled Benchmark of Quantum and Classical Kernels Under Out-of-Distribution Polymer Generalization",
+  "publication_assets": {
+    "main_figures_pdf": {
+      "actual": 6,
+      "expected": 6,
+      "passed": true
+    },
+    "main_figures_png": {
+      "actual": 6,
+      "expected": 6,
+      "passed": true
+    },
+    "main_figures_svg": {
+      "actual": 6,
+      "expected": 6,
+      "passed": true
+    },
+    "main_tables_csv": {
+      "actual": 5,
+      "expected": 5,
+      "passed": true
+    },
+    "supp_figures_pdf": {
+      "actual": 5,
+      "expected": 5,
+      "passed": true
+    },
+    "supp_figures_png": {
+      "actual": 5,
+      "expected": 5,
+      "passed": true
+    },
+    "supp_figures_svg": {
+      "actual": 5,
+      "expected": 5,
+      "passed": true
+    },
+    "supp_tables_csv": {
+      "actual": 8,
+      "expected": 8,
+      "passed": true
+    }
+  },
+  "raw_dataset_redistributed": false,
+  "release_archive": "/content/quantum_classical_kernel_ood_polymer_benchmark/quantum_polymer_ood_reproducibility_release.zip",
+  "release_archive_sha256": "6fbd6c8ec457082591168998818e032d8d6b95cf7c671f0d4989e87413a94f5a",
+  "release_directory": "/content/quantum_classical_kernel_ood_polymer_benchmark/outputs/step14_reproducibility_release",
+  "release_ready": true,
+  "target": "Tg (K)",
+  "usable_polymers": 7363
+}

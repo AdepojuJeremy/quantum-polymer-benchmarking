@@ -1,0 +1,19 @@
+# Runtime data and caches
+data/raw/
+cache/
+outputs/kernel_matrices/
+outputs/models/
+*.npy
+*.npz
+*.pkl
+*.joblib
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/

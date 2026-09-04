@@ -1,0 +1,15 @@
+{
+  "clean_dataset_filename": "polymetrix_curated_tg_clean.csv",
+  "data_release_policy": "The release package records provenance and checksums but does not redistribute the upstream raw dataset. Reproduction should download the dataset from the cited upstream source and follow its applicable terms.",
+  "dataset_name": "PolyMetriX Curated Tg",
+  "dataset_version": "v1",
+  "raw_dataset_filename": "LAMALAB_CURATED_Tg_structured_polymerclass.csv",
+  "raw_dataset_in_release_archive": false,
+  "recorded_raw_sha256": "b3b7e08a77a5739b55b8b70bba9ae78c5173c8658174f4732d30b6ea5b0a1079",
+  "target": "Tg",
+  "target_unit": "K",
+  "unique_polymer_strings": 7363,
+  "upstream_url": "https://zenodo.org/records/15210035/files/LAMALAB_CURATED_Tg_structured_polymerclass.csv?download=1",
+  "usable_samples": 7363,
+  "verified_raw_sha256": "b3b7e08a77a5739b55b8b70bba9ae78c5173c8658174f4732d30b6ea5b0a1079"
+}

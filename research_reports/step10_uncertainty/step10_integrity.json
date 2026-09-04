@@ -1,0 +1,27 @@
+{
+  "benchmark_splits": 5,
+  "kernel_models": 7,
+  "proper_train_per_split": 560,
+  "calibration_per_split": 140,
+  "test_per_split": 400,
+  "coverage_levels": [
+    0.8,
+    0.9,
+    0.95
+  ],
+  "interval_methods": [
+    "vanilla",
+    "adaptive_leverage"
+  ],
+  "interval_metric_rows_expected": 210,
+  "interval_metric_rows_observed": 210,
+  "interval_prediction_rows_expected": 84000,
+  "interval_prediction_rows_observed": 84000,
+  "finite_metrics": true,
+  "proper_calibration_test_disjoint": true,
+  "partition_uses_target": false,
+  "calibration_labels_used_for_hyperparameter_selection": false,
+  "test_labels_used_for_hyperparameter_selection": false,
+  "ood_exchangeability_guarantee_claimed": false,
+  "main_step7_results_replaced": false
+}

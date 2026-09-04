@@ -1,0 +1,14 @@
+table,role,stem
+Table 1,main,table1_benchmark_composition
+Table 2,main,table2_main_predictive_performance
+Table 3,main,table3_confirmatory_paired_inference
+Table 4,main,table4_kernel_mechanistic_summary
+Table 5,main,table5_uncertainty_calibration_90pct
+Table S1,supplementary,tableS1_quantum_ablation_results
+Table S2,supplementary,tableS2_finite_shot_summary
+Table S3,supplementary,tableS3_depolarizing_results
+Table S4,supplementary,tableS4_average_model_ranks
+Table S5,supplementary,tableS5_iid_seed_robustness
+Table S6,supplementary,tableS6_structural_fold_robustness
+Table S7,supplementary,tableS7_ablation_sensitivity_relative_to_main
+Table S8,supplementary,tableS8_manuscript_safe_claim_inventory

@@ -1,0 +1,91 @@
+{
+  "dataset": "PolyMetriX Curated Tg",
+  "target": "Tg (K)",
+  "matched_train_size": 700,
+  "matched_test_size": 400,
+  "matched_internal_cv_folds": 5,
+  "primary_splits": {
+    "random_iid": {
+      "split_type": "iid",
+      "full_train_size": 5890,
+      "full_test_size": 1473,
+      "matched_train_size": 700,
+      "matched_test_size": 400,
+      "metadata": {
+        "description": "Random interpolation control split.",
+        "test_fraction": 0.2,
+        "seed": 42
+      }
+    },
+    "structural_cluster_ood": {
+      "split_type": "structural_cluster_ood",
+      "full_train_size": 5862,
+      "full_test_size": 1501,
+      "matched_train_size": 700,
+      "matched_test_size": 400,
+      "metadata": {
+        "description": "Structural OOD split holding out complete fingerprint-defined clusters.",
+        "fold_id": 0,
+        "n_microclusters": 30,
+        "microclusters_in_test": [
+          0,
+          4,
+          20,
+          23,
+          25
+        ],
+        "target_used_for_clustering": false
+      }
+    },
+    "high_tg_extrapolation": {
+      "split_type": "property_tail_high",
+      "full_train_size": 5883,
+      "full_test_size": 1480,
+      "matched_train_size": 700,
+      "matched_test_size": 400,
+      "metadata": {
+        "description": "High-Tg extrapolation.",
+        "direction": "high",
+        "tail_fraction": 0.2,
+        "threshold_kelvin": 524.1500244140625
+      }
+    },
+    "low_tg_extrapolation": {
+      "split_type": "property_tail_low",
+      "full_train_size": 5887,
+      "full_test_size": 1476,
+      "matched_train_size": 700,
+      "matched_test_size": 400,
+      "metadata": {
+        "description": "Low-Tg extrapolation.",
+        "direction": "low",
+        "tail_fraction": 0.2,
+        "threshold_kelvin": 316.1499938964844
+      }
+    },
+    "class_holdout_polyimides": {
+      "split_type": "polymer_class_ood",
+      "full_train_size": 5598,
+      "full_test_size": 1765,
+      "matched_train_size": 700,
+      "matched_test_size": 400,
+      "metadata": {
+        "description": "Leave-one-polymer-class-out extrapolation.",
+        "heldout_class": "Polyimides",
+        "heldout_class_size": 1765
+      }
+    }
+  },
+  "structural_clustering": {
+    "representation": "Morgan count fingerprint",
+    "target_used": false,
+    "svd_components": 64,
+    "microclusters": 30,
+    "structural_folds": 5,
+    "primary_structural_fold": 0
+  },
+  "property_tail_fraction": 0.2,
+  "high_tg_threshold_k": 524.1500244140625,
+  "low_tg_threshold_k": 316.1499938964844,
+  "canonical_graph_grouping": true
+}

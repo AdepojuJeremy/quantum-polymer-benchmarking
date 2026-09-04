@@ -1,0 +1,36 @@
+\begin{tabular}{llllrrrrrrr}
+\toprule
+split & regime\_display & model & model\_display\_publication & mae & cluster\_bootstrap\_ci\_low & cluster\_bootstrap\_ci\_high & rmse & r2 & spearman & n\_structural\_clusters \\
+\midrule
+class\_holdout\_polyimides & Class holdout & KRR\_TANIMOTO & Tanimoto KRR & 40.005 & 32.313 & 47.647 & 52.125 & 0.539 & 0.683 & 18 \\
+class\_holdout\_polyimides & Class holdout & KRR\_MATERN\_MATCHED & Matérn KRR & 40.310 & 31.665 & 47.997 & 53.600 & 0.513 & 0.636 & 18 \\
+class\_holdout\_polyimides & Class holdout & KRR\_LAPLACIAN\_MATCHED & Laplacian KRR & 41.893 & 36.049 & 47.533 & 55.212 & 0.483 & 0.616 & 18 \\
+class\_holdout\_polyimides & Class holdout & KRR\_RBF\_MATCHED & RBF KRR & 41.904 & 36.300 & 46.917 & 53.595 & 0.513 & 0.633 & 18 \\
+class\_holdout\_polyimides & Class holdout & QKRR\_FQK & QKRR–FQK & 102.386 & 85.209 & 117.576 & 119.504 & -1.423 & 0.340 & 18 \\
+class\_holdout\_polyimides & Class holdout & QKRR\_PQK & QKRR–PQK & 102.722 & 85.486 & 115.943 & 126.060 & -1.696 & 0.154 & 18 \\
+high\_tg\_extrapolation & High-Tg OOD & KRR\_RBF\_MATCHED & RBF KRR & 97.579 & 89.516 & 110.629 & 108.767 & -5.182 & 0.138 & 17 \\
+high\_tg\_extrapolation & High-Tg OOD & KRR\_TANIMOTO & Tanimoto KRR & 99.898 & 84.186 & 120.298 & 114.946 & -5.904 & -0.134 & 17 \\
+high\_tg\_extrapolation & High-Tg OOD & KRR\_MATERN\_MATCHED & Matérn KRR & 100.152 & 90.748 & 113.071 & 111.868 & -5.539 & 0.022 & 17 \\
+high\_tg\_extrapolation & High-Tg OOD & KRR\_LAPLACIAN\_MATCHED & Laplacian KRR & 109.954 & 98.904 & 126.175 & 121.777 & -6.749 & -0.092 & 17 \\
+high\_tg\_extrapolation & High-Tg OOD & QKRR\_FQK & QKRR–FQK & 166.788 & 150.575 & 184.053 & 178.808 & -15.707 & -0.178 & 17 \\
+high\_tg\_extrapolation & High-Tg OOD & QKRR\_PQK & QKRR–PQK & 167.756 & 151.080 & 187.459 & 182.859 & -16.473 & -0.122 & 17 \\
+low\_tg\_extrapolation & Low-Tg OOD & KRR\_TANIMOTO & Tanimoto KRR & 83.930 & 68.023 & 100.494 & 97.523 & -5.299 & 0.139 & 25 \\
+low\_tg\_extrapolation & Low-Tg OOD & KRR\_MATERN\_MATCHED & Matérn KRR & 86.255 & 72.411 & 100.495 & 97.618 & -5.311 & 0.111 & 25 \\
+low\_tg\_extrapolation & Low-Tg OOD & KRR\_RBF\_MATCHED & RBF KRR & 87.161 & 72.185 & 102.172 & 99.998 & -5.622 & 0.134 & 25 \\
+low\_tg\_extrapolation & Low-Tg OOD & KRR\_LAPLACIAN\_MATCHED & Laplacian KRR & 90.392 & 74.445 & 106.233 & 103.094 & -6.039 & 0.011 & 25 \\
+low\_tg\_extrapolation & Low-Tg OOD & QKRR\_PQK & QKRR–PQK & 153.209 & 134.703 & 168.696 & 167.522 & -17.585 & -0.211 & 25 \\
+low\_tg\_extrapolation & Low-Tg OOD & QKRR\_FQK & QKRR–FQK & 156.209 & 138.561 & 171.468 & 166.906 & -17.449 & -0.170 & 25 \\
+random\_iid & Random IID & KRR\_TANIMOTO & Tanimoto KRR & 39.552 & 34.467 & 45.280 & 54.885 & 0.777 & 0.892 & 29 \\
+random\_iid & Random IID & KRR\_MATERN\_MATCHED & Matérn KRR & 43.458 & 38.777 & 49.071 & 59.937 & 0.735 & 0.864 & 29 \\
+random\_iid & Random IID & KRR\_RBF\_MATCHED & RBF KRR & 44.358 & 39.677 & 49.853 & 60.565 & 0.729 & 0.857 & 29 \\
+random\_iid & Random IID & KRR\_LAPLACIAN\_MATCHED & Laplacian KRR & 45.162 & 39.830 & 51.259 & 60.231 & 0.732 & 0.861 & 29 \\
+random\_iid & Random IID & QKRR\_PQK & QKRR–PQK & 68.353 & 58.257 & 78.529 & 90.367 & 0.397 & 0.657 & 29 \\
+random\_iid & Random IID & QKRR\_FQK & QKRR–FQK & 68.546 & 58.626 & 78.685 & 88.540 & 0.421 & 0.688 & 29 \\
+structural\_cluster\_ood & Structural OOD & KRR\_TANIMOTO & Tanimoto KRR & 36.898 & 31.880 & 47.203 & 47.474 & 0.751 & 0.842 & 5 \\
+structural\_cluster\_ood & Structural OOD & KRR\_MATERN\_MATCHED & Matérn KRR & 40.394 & 33.429 & 49.312 & 52.891 & 0.690 & 0.773 & 5 \\
+structural\_cluster\_ood & Structural OOD & KRR\_RBF\_MATCHED & RBF KRR & 42.103 & 34.174 & 52.230 & 54.631 & 0.670 & 0.758 & 5 \\
+structural\_cluster\_ood & Structural OOD & KRR\_LAPLACIAN\_MATCHED & Laplacian KRR & 45.491 & 39.652 & 57.631 & 59.515 & 0.608 & 0.702 & 5 \\
+structural\_cluster\_ood & Structural OOD & QKRR\_FQK & QKRR–FQK & 61.218 & 51.173 & 116.917 & 80.401 & 0.284 & 0.539 & 5 \\
+structural\_cluster\_ood & Structural OOD & QKRR\_PQK & QKRR–PQK & 71.746 & 58.783 & 128.884 & 93.778 & 0.027 & 0.418 & 5 \\
+\bottomrule
+\end{tabular}

@@ -1,0 +1,13 @@
+\begin{tabular}{lllrrrrrrrrr}
+\toprule
+kernel\_id & kernel\_display & method\_family & mean\_mae & mean\_target\_alignment & mean\_participation\_rank & mean\_entropy\_rank & mean\_top10\_spectral\_fraction & mean\_offdiag\_similarity & mean\_structure\_preservation & mean\_error\_vs\_kernel\_novelty\_spearman & mean\_kernel\_vs\_structural\_novelty\_spearman \\
+\midrule
+KRR\_TANIMOTO & Tanimoto & classical & 60.057 & 0.304 & 126.709 & 315.369 & 0.212 & 0.136 & 1.000 & 0.353 & 1.000 \\
+KRR\_MATERN\_MATCHED & Matérn & classical & 62.114 & 0.246 & 19.975 & 59.339 & 0.709 & 0.906 & 0.458 & 0.177 & 0.278 \\
+KRR\_RBF\_MATCHED & RBF & classical & 62.621 & 0.245 & 15.923 & 28.656 & 0.735 & 0.475 & 0.458 & 0.207 & 0.278 \\
+KRR\_LINEAR\_MATCHED & Linear & classical & 65.528 & 0.235 & 8.000 & 8.000 & 1.000 & -0.011 & 0.468 & 0.068 & 0.269 \\
+KRR\_LAPLACIAN\_MATCHED & Laplacian & classical & 66.578 & 0.224 & 52.439 & 155.933 & 0.401 & 0.358 & 0.449 & 0.216 & 0.267 \\
+FQK\_MAIN & FQK & quantum & 111.029 & 0.067 & 437.235 & 546.659 & 0.068 & 0.008 & 0.080 & 0.394 & 0.226 \\
+PQK\_MAIN & PQK & quantum & 112.757 & 0.060 & 59.175 & 140.555 & 0.340 & 0.379 & 0.026 & 0.239 & 0.233 \\
+\bottomrule
+\end{tabular}

@@ -1,0 +1,75 @@
+{
+  "dataset": "PolyMetriX Curated Tg",
+  "target": "Tg (K)",
+  "matched_train_size": 700,
+  "matched_test_size": 400,
+  "matched_dimension": 8,
+  "exported_dimensions": [
+    4,
+    8,
+    12
+  ],
+  "cv_folds": 5,
+  "predictive_preprocessing_fit_inside_cv": true,
+  "test_labels_used_for_model_selection": false,
+  "models": [
+    "KRR_LINEAR_MATCHED",
+    "KRR_RBF_MATCHED",
+    "KRR_LAPLACIAN_MATCHED",
+    "KRR_MATERN_MATCHED",
+    "KRR_TANIMOTO",
+    "SVR_RBF_MATCHED",
+    "SVR_TANIMOTO",
+    "RANDOM_FOREST_CONTEXT",
+    "EXTRA_TREES_CONTEXT"
+  ],
+  "best_model_by_split": [
+    {
+      "split": "class_holdout_polyimides",
+      "model": "SVR_TANIMOTO",
+      "model_display": "Tanimoto SVR",
+      "mae": 39.74200526173266,
+      "rmse": 51.76806659972126,
+      "r2": 0.5452645514332044,
+      "spearman": 0.6897633925844315
+    },
+    {
+      "split": "high_tg_extrapolation",
+      "model": "SVR_RBF_MATCHED",
+      "model_display": "RBF SVR",
+      "mae": 94.51625216785911,
+      "rmse": 106.28071647894413,
+      "r2": -4.902521302092203,
+      "spearman": 0.08159785775286185
+    },
+    {
+      "split": "low_tg_extrapolation",
+      "model": "SVR_RBF_MATCHED",
+      "model_display": "RBF SVR",
+      "mae": 79.3062187276869,
+      "rmse": 92.29896178959547,
+      "r2": -4.641822732411591,
+      "spearman": 0.15652993521351438
+    },
+    {
+      "split": "random_iid",
+      "model": "SVR_TANIMOTO",
+      "model_display": "Tanimoto SVR",
+      "mae": 39.09451744022378,
+      "rmse": 54.654990761310046,
+      "r2": 0.7792952897350666,
+      "spearman": 0.895454451743048
+    },
+    {
+      "split": "structural_cluster_ood",
+      "model": "KRR_TANIMOTO",
+      "model_display": "Tanimoto KRR",
+      "mae": 36.8982136046094,
+      "rmse": 47.474001893460624,
+      "r2": 0.7505224020118907,
+      "spearman": 0.8424295991904804
+    }
+  ],
+  "total_runtime_sec": 1085.0157163143158,
+  "matched_representation_directory": "/content/quantum_classical_kernel_ood_polymer_benchmark/data/processed/matched_representations"
+}

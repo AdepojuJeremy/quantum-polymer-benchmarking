@@ -84,7 +84,7 @@ cymem==2.0.13
 Cython==3.0.12
 dask==2026.8.0
 dataproc-spark-connect==1.1.0
-datasets==4.0.0
+datasets==5.0.1
 db-dtypes==1.7.1
 dbus-python==1.2.18
 debugpy==1.8.15

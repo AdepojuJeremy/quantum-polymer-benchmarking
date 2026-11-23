@@ -415,7 +415,7 @@ ptyprocess==0.7.0
 PuLP==3.3.2
 py-cpuinfo==9.0.0
 py4j==0.10.9.9
-pyarrow==18.1.0
+pyarrow==23.0.1
 pyasn1==0.6.4
 pyasn1_modules==0.4.2
 pycairo==1.29.1

@@ -451,7 +451,7 @@ pyshp==3.1.6
 PySocks==1.7.1
 pyspark==4.0.4
 pytensor==2.38.3
-pytest==8.4.2
+pytest==9.0.3
 python-apt==0.0.0
 python-box==7.4.1
 python-dateutil==2.9.0.post0

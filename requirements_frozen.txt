@@ -130,7 +130,7 @@ fonttools==4.63.0
 fqdn==1.5.1
 frozendict==2.4.7
 frozenlist==1.8.0
-fsspec==2025.3.0
+fsspec==2026.6.0
 future==1.0.0
 gast==0.7.0
 gcsfs==2025.3.0

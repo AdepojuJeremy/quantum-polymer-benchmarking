@@ -269,7 +269,7 @@ kaggle==2.0.2
 kagglehub==1.0.2
 kagglesdk==0.1.37
 kaleido==1.4.0
-keras==3.13.2
+keras==3.15.0
 keras-hub==0.26.0
 keras-nlp==0.26.0
 keyring==25.7.0

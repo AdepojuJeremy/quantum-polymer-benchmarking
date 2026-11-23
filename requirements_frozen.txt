@@ -322,7 +322,7 @@ more-itertools==10.8.0
 moviepy==1.0.3
 mpmath==1.3.0
 msgpack==1.2.1
-multidict==6.7.1
+multidict==6.9.1
 multipledispatch==1.0.0
 multiprocess==0.70.16
 multitasking==0.0.13
